@@ -12,10 +12,14 @@ public class GameManager : MonoBehaviour
         public TextMeshProUGUI taskText;
         public WheelSocket socket;
         public bool isCompleted = false;
+
+        public CarWash carWash;
+        public bool isWashTask = false;
     }
 
     public List<TaskUI> tasks = new List<TaskUI>();
     public List<WheelColor.ColorType> availableColors;
+
 
     void Start()
     {
@@ -70,13 +74,13 @@ public class GameManager : MonoBehaviour
         string positionText = GetPositionText(task.socket.socketPosition);
         string colorText = GetColorText(task.socket.requiredColor);
 
-        // Статус гайки (одна)
-        string nutStatus = task.socket.nutTightened ? "✅ гайка закручена" : "🔧 гайка откручена";
+        // Статус гайки
+        string nutStatus = task.socket.nutTightened ? "гайка закручена" : "гайка откручена";
 
         // Статус колеса
-        string wheelStatus = task.socket.isCorrectWheelPlaced ? "✅ колесо" : "⭕ ждет колесо";
+        string wheelStatus = task.socket.isCorrectWheelPlaced ? "колесо установлено" : "колесо не установдено";
 
-        task.taskText.text = $"{colorText} {positionText}\n{nutStatus} | {wheelStatus}";
+        task.taskText.text = $"Установить {colorText} колесо {positionText}\n{nutStatus} | {wheelStatus}";
 
         if (task.isCompleted)
         {
@@ -108,13 +112,35 @@ public class GameManager : MonoBehaviour
         }
     }
 
+
+
     void CheckAllTasksCompleted()
     {
-        bool allCompleted = tasks.All(t => t.isCompleted);
+        // Проверяем все задачи с колёсами
+        bool allWheelTasksCompleted = true;
+        bool washCompleted = true;
 
-        if (allCompleted)
+        foreach (var task in tasks)
         {
-            UnityEngine.Debug.Log("🎉 ПОБЕДА! Все задачи выполнены!");
+            if (task.isWashTask)
+            {
+                if (task.carWash != null)
+                {
+                    washCompleted = task.carWash.currentProgress >= 1f;
+                }
+            }
+            else
+            {
+                if (!task.isCompleted)
+                {
+                    allWheelTasksCompleted = false;
+                }
+            }
+        }
+
+        if (allWheelTasksCompleted && washCompleted)
+        {
+            UnityEngine.Debug.Log("ПОБЕДА! Все задачи выполнены!");
         }
     }
 

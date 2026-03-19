@@ -11,8 +11,6 @@ public class Wrench : MonoBehaviour
         {
             // Переключаем состояние гайки
             nut.ToggleTighten();
-
-            UnityEngine.Debug.Log("Гайковерт коснулся гайки");
         }
     }
 }
