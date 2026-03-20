@@ -148,7 +148,7 @@ Transform:
   m_GameObject: {fileID: 36651989}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -0.017, y: 0.006, z: -0.139}
+  m_LocalPosition: {x: -0.017, y: 0.006, z: -0.214}
   m_LocalScale: {x: 0.19, y: 0.1, z: 0.19}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -392,6 +392,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1912075568814116168, guid: e034146934d696f4ea8ad14e2251ae3f, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1912075568814116168, guid: e034146934d696f4ea8ad14e2251ae3f, type: 3}
       propertyPath: m_CollisionDetection
       value: 2
       objectReference: {fileID: 0}
@@ -417,7 +421,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7466086546160032730, guid: e034146934d696f4ea8ad14e2251ae3f, type: 3}
       propertyPath: m_MovementType
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7466086546160032730, guid: e034146934d696f4ea8ad14e2251ae3f, type: 3}
       propertyPath: m_InteractionManager
@@ -484,6 +488,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1912075568814116168, guid: 6e20468697717ea4ab59a62025faf5c8, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1912075568814116168, guid: 6e20468697717ea4ab59a62025faf5c8, type: 3}
       propertyPath: m_CollisionDetection
       value: 2
       objectReference: {fileID: 0}
@@ -517,7 +525,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7466086546160032730, guid: 6e20468697717ea4ab59a62025faf5c8, type: 3}
       propertyPath: m_MovementType
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7466086546160032730, guid: 6e20468697717ea4ab59a62025faf5c8, type: 3}
       propertyPath: m_InteractionManager
@@ -583,6 +591,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1912075568814116168, guid: 361f11442534b374aa0e3d0a74931c47, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6436342284210099215, guid: 361f11442534b374aa0e3d0a74931c47, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071068
@@ -605,7 +617,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7466086546160032730, guid: 361f11442534b374aa0e3d0a74931c47, type: 3}
       propertyPath: m_MovementType
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7466086546160032730, guid: 361f11442534b374aa0e3d0a74931c47, type: 3}
       propertyPath: m_InteractionManager
@@ -1772,7 +1784,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 0
+  m_MovementType: 2
   m_PredictedVisualsTransform: {fileID: 0}
   m_VelocityDamping: 1
   m_VelocityScale: 1
@@ -1843,7 +1855,7 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!64 &355531170
@@ -7213,6 +7225,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1912075568814116168, guid: e034146934d696f4ea8ad14e2251ae3f, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1912075568814116168, guid: e034146934d696f4ea8ad14e2251ae3f, type: 3}
       propertyPath: m_CollisionDetection
       value: 2
       objectReference: {fileID: 0}
@@ -7238,7 +7254,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7466086546160032730, guid: e034146934d696f4ea8ad14e2251ae3f, type: 3}
       propertyPath: m_MovementType
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7466086546160032730, guid: e034146934d696f4ea8ad14e2251ae3f, type: 3}
       propertyPath: m_InteractionManager
@@ -7326,7 +7342,7 @@ Transform:
   m_GameObject: {fileID: 592680398}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.8001981, y: -0.1778555, z: 1.54454}
+  m_LocalPosition: {x: 0.753, y: -0.1778555, z: 1.54454}
   m_LocalScale: {x: 0.43, y: 0.43, z: 0.43}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7415,7 +7431,7 @@ MeshRenderer:
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
+  m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
@@ -7714,7 +7730,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 0
+  m_MovementType: 2
   m_PredictedVisualsTransform: {fileID: 0}
   m_VelocityDamping: 1
   m_VelocityScale: 1
@@ -7785,7 +7801,7 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!114 &614274983
@@ -8756,6 +8772,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1912075568814116168, guid: b2a899703d00327479d892a21e6f643e, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1912075568814116168, guid: b2a899703d00327479d892a21e6f643e, type: 3}
       propertyPath: m_CollisionDetection
       value: 2
       objectReference: {fileID: 0}
@@ -8781,7 +8801,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7466086546160032730, guid: b2a899703d00327479d892a21e6f643e, type: 3}
       propertyPath: m_MovementType
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7466086546160032730, guid: b2a899703d00327479d892a21e6f643e, type: 3}
       propertyPath: m_InteractionManager
@@ -9533,6 +9553,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1912075568814116168, guid: e034146934d696f4ea8ad14e2251ae3f, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1912075568814116168, guid: e034146934d696f4ea8ad14e2251ae3f, type: 3}
       propertyPath: m_CollisionDetection
       value: 2
       objectReference: {fileID: 0}
@@ -9558,7 +9582,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7466086546160032730, guid: e034146934d696f4ea8ad14e2251ae3f, type: 3}
       propertyPath: m_MovementType
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7466086546160032730, guid: e034146934d696f4ea8ad14e2251ae3f, type: 3}
       propertyPath: m_InteractionManager
@@ -10090,6 +10114,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1912075568814116168, guid: 3dbd13a87f472f54783c4199ea903c3b, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1912075568814116168, guid: 3dbd13a87f472f54783c4199ea903c3b, type: 3}
       propertyPath: m_CollisionDetection
       value: 2
       objectReference: {fileID: 0}
@@ -10115,7 +10143,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7466086546160032730, guid: 3dbd13a87f472f54783c4199ea903c3b, type: 3}
       propertyPath: m_MovementType
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7466086546160032730, guid: 3dbd13a87f472f54783c4199ea903c3b, type: 3}
       propertyPath: m_InteractionManager
@@ -10465,6 +10493,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1912075568814116168, guid: e034146934d696f4ea8ad14e2251ae3f, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1912075568814116168, guid: e034146934d696f4ea8ad14e2251ae3f, type: 3}
       propertyPath: m_CollisionDetection
       value: 2
       objectReference: {fileID: 0}
@@ -10490,7 +10522,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7466086546160032730, guid: e034146934d696f4ea8ad14e2251ae3f, type: 3}
       propertyPath: m_MovementType
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7466086546160032730, guid: e034146934d696f4ea8ad14e2251ae3f, type: 3}
       propertyPath: m_InteractionManager
